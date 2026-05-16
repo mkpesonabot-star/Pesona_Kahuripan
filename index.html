@@ -8,6 +8,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Ads: 9748555550 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-9748555550"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-9748555550');
+    </script>
+
+    <!-- Event snippet for WhatsApp Click conversion page -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-9748555550/whatsapp_click',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .gradient-green { background: linear-gradient(135deg, #059669 0%, #10b981 100%); }
@@ -23,6 +49,7 @@
 
     <!-- Sticky WA Button -->
     <a href="https://wa.me/628211979791?text=Halo%20AbangRico,%20saya%20tertarik%20dengan%20Pesona%20Kahuripan%2012.%20Bisa%20info%20lebih%20lanjut?" 
+       onclick="return gtag_report_conversion('https://wa.me/628211979791?text=Halo%20AbangRico,%20saya%20tertarik%20dengan%20Pesona%20Kahuripan%2012.%20Bisa%20info%20lebih%20lanjut?');"
        class="fixed bottom-6 right-6 z-50 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl sticky-wa hover:bg-green-600 transition-all">
         <i class="fab fa-whatsapp text-3xl"></i>
     </a>
