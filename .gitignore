@@ -1,0 +1,14 @@
+.env
+*.yaml
+*.json
+fb_cookies.json
+*.log
+*.txt
+*.png
+*.pdf
+memory/
+.clawhub/
+.openclaw/
+*.py
+# Allow specific non-sensitive scripts if needed
+#!index.py
