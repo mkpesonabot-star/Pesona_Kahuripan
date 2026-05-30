@@ -1,0 +1,21 @@
+.env
+*.yaml
+*.json
+fb_cookies.json
+*.log
+*.txt
+*.png
+*.pdf
+memory/
+.clawhub/
+.openclaw/
+
+# Block specific sensitive scripts
+cek_saldo_indodax.py
+indodax_bot.py
+google-ads.yaml
+get_refresh_token.py
+create_test_campaign.py
+list_customers_dict.py
+setup_conversion.py
+test_ads_connection.py
