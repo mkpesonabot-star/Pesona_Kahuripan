@@ -1,6 +1,8 @@
 import os
 from google.ads.googleads.client import GoogleAdsClient
 
+with open('debug.txt', 'w') as f: f.write(str(os.environ))
+
 def test_connection():
     try:
         credentials = {
